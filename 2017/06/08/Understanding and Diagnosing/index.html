@@ -90,20 +90,20 @@
 
 
 
-<meta name="description" content="《Understanding and Diagnosing Visual Tracking Systems》笔记 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。 引言本文重点研究">
+<meta name="description" content="《Understanding and Diagnosing Visual Tracking Systems》下载地址 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。 引言本文重点">
 <meta name="keywords" content="笔记，跟踪，评价">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《Understanding and Diagnosing Visual Tracking Systems》笔记">
 <meta property="og:url" content="http://wookchang.info/2017/06/08/Understanding and Diagnosing/index.html">
 <meta property="og:site_name" content="WookChang">
-<meta property="og:description" content="《Understanding and Diagnosing Visual Tracking Systems》笔记 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。 引言本文重点研究">
-<meta property="og:image" content="https://admin365edu-my.sharepoint.com/personal/616049695_drive_office365edu_cn/_layouts/15/guestaccess.aspx?docid=146e9236d49484b028d5d4b38235416b5&authkey=Af1sjoY6dd4EIF5OEFCPlBI">
-<meta property="og:image" content="https://admin365edu-my.sharepoint.com/personal/616049695_drive_office365edu_cn/_layouts/15/guestaccess.aspx?docid=14370abc9a6f24eb69c1360bf41514877&authkey=ATYG2jEqnus9UN9uBux869c">
-<meta property="og:updated_time" content="2017-06-08T05:27:31.548Z">
+<meta property="og:description" content="《Understanding and Diagnosing Visual Tracking Systems》下载地址 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。 引言本文重点">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/1127321/201706/1127321-20170608134405262-2012880001.png">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/1127321/201706/1127321-20170608134303918-998194423.png">
+<meta property="og:updated_time" content="2017-06-08T05:44:57.716Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《Understanding and Diagnosing Visual Tracking Systems》笔记">
-<meta name="twitter:description" content="《Understanding and Diagnosing Visual Tracking Systems》笔记 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。 引言本文重点研究">
-<meta name="twitter:image" content="https://admin365edu-my.sharepoint.com/personal/616049695_drive_office365edu_cn/_layouts/15/guestaccess.aspx?docid=146e9236d49484b028d5d4b38235416b5&authkey=Af1sjoY6dd4EIF5OEFCPlBI">
+<meta name="twitter:description" content="《Understanding and Diagnosing Visual Tracking Systems》下载地址 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。 引言本文重点">
+<meta name="twitter:image" content="http://images2015.cnblogs.com/blog/1127321/201706/1127321-20170608134405262-2012880001.png">
 
 
 
@@ -394,11 +394,11 @@
       
 
       
-        <p>《Understanding and Diagnosing Visual Tracking Systems》笔记</p>
+        <p>《Understanding and Diagnosing Visual Tracking Systems》<a href="http://winsty.net/papers/diagnose.pdf" target="_blank" rel="external">下载地址</a></p>
 <p>ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia.</p>
 <p>读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。</p>
 <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>本文重点研究了最一般类型的视觉跟踪问题，即short-term single-object model-free tracking。目前的追踪器评估系统主要有Online tracking benchmark (OTB)，the Visual object tracking challenge (VOT)等。然而，由于跟踪器是往往由复杂的结构组成，不能简单的断定其强项与弱项。于是，作者提出了一种框架，将一个追踪系统分成了五个部分，分别为：motion model，feature extractor，observation model，model updater和ensemble post-processor。框架如下图</p>
-<p><img src="https://admin365edu-my.sharepoint.com/personal/616049695_drive_office365edu_cn/_layouts/15/guestaccess.aspx?docid=146e9236d49484b028d5d4b38235416b5&amp;authkey=Af1sjoY6dd4EIF5OEFCPlBI" alt="1.png"></p>
+<p><img src="http://images2015.cnblogs.com/blog/1127321/201706/1127321-20170608134405262-2012880001.png" alt="1.png"></p>
 <p>本文发现feature extractor的效果最重要的影响因素，而非被人们研究的最多的observation model，而且，ensemble post-processor是有一个简单的却能有效提升性能的方法，相比之下很少被人研究。除此之外，motion model和model updater的细节也是影响性能的关键。</p>
 <h3 id="相关工作"><a href="#相关工作" class="headerlink" title="相关工作"></a>相关工作</h3><p>short-term single-object model-free tracking可以分为两类：生成式和判别式。评价方法有OTB-50中提出的：(AUC) 通过重合率曲线下的的面积或者是中心像素距离曲线来进行评估。还有VOT中使用的两个独立指标：准确度和鲁棒性。其中，准确性是通过预测的位置区域与真实位置区域之间的重合率来度量，鲁棒性是通过跟踪失败的频率来判断的。</p>
 <h3 id="提出的框架"><a href="#提出的框架" class="headerlink" title="提出的框架"></a>提出的框架</h3><ol>
@@ -418,7 +418,7 @@
 </ul>
 <h3 id="验证设置"><a href="#验证设置" class="headerlink" title="验证设置"></a>验证设置</h3><h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><p>使用OTB1.0进行实验，采用两个度量标准，一个是AUC重合率曲线，另一个是位置误差曲线。</p>
 <h4 id="基础模型"><a href="#基础模型" class="headerlink" title="基础模型"></a>基础模型</h4><p>作者设计了一个基础的追踪系统。该系统采用particle filter框架作为motion model，将灰度图像的像素作为特征，将logistic regression作为observation model。对于model updater，作者采用一个简单的规则：候选区域框中的最高得分如果在阈值之下，那么该模型将会更新。该基础的追踪系统只有一个追踪器，因此不包含ensemble post-processor部分。该模型的效果如下（下图黑色曲线）：</p>
-<p><img src="https://admin365edu-my.sharepoint.com/personal/616049695_drive_office365edu_cn/_layouts/15/guestaccess.aspx?docid=14370abc9a6f24eb69c1360bf41514877&amp;authkey=ATYG2jEqnus9UN9uBux869c" alt="2.png"></p>
+<p><img src="http://images2015.cnblogs.com/blog/1127321/201706/1127321-20170608134303918-998194423.png" alt="2.png"></p>
 <h3 id="验证和分析"><a href="#验证和分析" class="headerlink" title="验证和分析"></a>验证和分析</h3><h4 id="Feature-Extractor"><a href="#Feature-Extractor" class="headerlink" title="Feature Extractor"></a>Feature Extractor</h4><p>作者采用了如下5种特征进行实验：</p>
 <ol>
 <li>Raw Grayscale（未处理的灰度图）：简单地将图像重新调整到固定大小，然后将其转换为灰度图，然后使用像素值作为特征</li>
@@ -464,6 +464,11 @@
 <li>模型更新可以显著影响结果</li>
 <li>综合后处理很有效</li>
 <li>运动模型和模型更新的细节很重要</li>
+</ol>
+<p>启发：如何寻找轻量且有效的特征表现，principled的模型更新策略，以及更先进的组合方式</p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ol>
+<li><a href="http://blog.csdn.net/hjl240/article/details/52225988" target="_blank" rel="external">追踪系统分模块解析</a></li>
+<li><a href="http://blog.csdn.net/u010515206/article/details/53406721" target="_blank" rel="external">论文笔记</a></li>
 </ol>
 
       
@@ -683,7 +688,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关工作"><span class="nav-number">2.</span> <span class="nav-text">相关工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提出的框架"><span class="nav-number">3.</span> <span class="nav-text">提出的框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证设置"><span class="nav-number">4.</span> <span class="nav-text">验证设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#设置"><span class="nav-number">4.1.</span> <span class="nav-text">设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础模型"><span class="nav-number">4.2.</span> <span class="nav-text">基础模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证和分析"><span class="nav-number">5.</span> <span class="nav-text">验证和分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Feature-Extractor"><span class="nav-number">5.1.</span> <span class="nav-text">Feature Extractor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Observation-Model"><span class="nav-number">5.2.</span> <span class="nav-text">Observation Model</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Motion-Model"><span class="nav-number">5.3.</span> <span class="nav-text">Motion Model</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Model-Updater"><span class="nav-number">5.4.</span> <span class="nav-text">Model Updater</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensemble-post-processor"><span class="nav-number">5.5.</span> <span class="nav-text">ensemble post-processor</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#当前框架的局限"><span class="nav-number">6.</span> <span class="nav-text">当前框架的局限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结和展望"><span class="nav-number">7.</span> <span class="nav-text">总结和展望</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关工作"><span class="nav-number">2.</span> <span class="nav-text">相关工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提出的框架"><span class="nav-number">3.</span> <span class="nav-text">提出的框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证设置"><span class="nav-number">4.</span> <span class="nav-text">验证设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#设置"><span class="nav-number">4.1.</span> <span class="nav-text">设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础模型"><span class="nav-number">4.2.</span> <span class="nav-text">基础模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证和分析"><span class="nav-number">5.</span> <span class="nav-text">验证和分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Feature-Extractor"><span class="nav-number">5.1.</span> <span class="nav-text">Feature Extractor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Observation-Model"><span class="nav-number">5.2.</span> <span class="nav-text">Observation Model</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Motion-Model"><span class="nav-number">5.3.</span> <span class="nav-text">Motion Model</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Model-Updater"><span class="nav-number">5.4.</span> <span class="nav-text">Model Updater</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensemble-post-processor"><span class="nav-number">5.5.</span> <span class="nav-text">ensemble post-processor</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#当前框架的局限"><span class="nav-number">6.</span> <span class="nav-text">当前框架的局限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结和展望"><span class="nav-number">7.</span> <span class="nav-text">总结和展望</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考资料"><span class="nav-number">8.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
