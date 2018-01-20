@@ -97,7 +97,7 @@
 <meta property="og:url" content="http://wookchang.info/2017/06/10/long-term-correlation-tracking/index.html">
 <meta property="og:site_name" content="WookChang">
 <meta property="og:description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang  引言在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于ling-term tracki">
-<meta property="og:updated_time" content="2017-06-10T07:19:51.197Z">
+<meta property="og:updated_time" content="2017-06-12T02:21:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《Long-Term Correlation Tracking》笔记">
 <meta name="twitter:description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang  引言在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于ling-term tracki">
@@ -413,12 +413,13 @@
 <h3 id="相关工作"><a href="#相关工作" class="headerlink" title="相关工作"></a>相关工作</h3><p>相关跟踪：MOSSE-CSK-KCF-CN-DSST</p>
 <p>tracking-by-detection：TLD-<a href="https://pdfs.semanticscholar.org/40e0/b4107100f077bcea35bb5481e11898342b48.pdf" target="_blank" rel="external">MEEM</a>-Struck</p>
 <h3 id="跟踪器组成"><a href="#跟踪器组成" class="headerlink" title="跟踪器组成"></a>跟踪器组成</h3><h4 id="相关跟踪"><a href="#相关跟踪" class="headerlink" title="相关跟踪"></a>相关跟踪</h4><h5 id="典型方法"><a href="#典型方法" class="headerlink" title="典型方法"></a>典型方法</h5><p>用滤波器$\omega$对目标外观建模：</p>
-<p>$$\omega=\mathop{argmin}<em>\omega\sum</em>{m,n}|\phi(x_{m,n})\cdot\omega-y(m,n)|^2+\lambda|\omega|^2$$</p>
+<p>$$\omega=\mathop{argmin}<em>{\omega}\sum</em>{m,n}$$</p>
+<p>$$ \omega=\mathop{argmin}<em>{\omega}\sum</em>{m,n}|\phi(x_{m,n})\cdot\omega-y(m,n)|^2+\lambda|\omega|^2 $$</p>
 <p>其中$\phi$表示核函数，$y$表示标签，$\lambda$表示正则化参数 </p>
-<p>$$\omega=\sum<em>{m,n}\alpha(m,n)\phi(x</em>{m,n})$$</p>
-<p>$$A=\mathcal F(\alpha)=\frac{\mathcal F(y)}{\mathcal F(\phi(x)\cdot\phi(x))+\lambda}$$</p>
+<p>$$ \omega=\sum<em>{m,n}\alpha(m,n)\phi(x</em>{m,n}) $$</p>
+<p>$$ A=\mathcal F(\alpha)=\frac{\mathcal F(y)}{\mathcal F(\phi(x)\cdot\phi(x))+\lambda} $$</p>
 <p>跟踪结果为：</p>
-<p>$$\hat{y}=\mathcal F^{-1}(A\odot\mathcal{F}(\phi(z)\cdot\phi(\hat{x}))$$</p>
+<p>$$ \hat{y}=\mathcal F^{-1}(A\odot\mathcal{F}(\phi(z)\cdot\phi(\hat{x})) $$</p>
 <h5 id="本文不同"><a href="#本文不同" class="headerlink" title="本文不同"></a>本文不同</h5><p>对于每一帧基于相关滤波训练两个回归模型：</p>
 <ul>
 <li>时间上下文模型$R_c$，包括目标和上下文信息，在遮挡情况下，可以根据背景判断目标。其中，需要去除边界效应，对于提取的特征需要用cosine window加权。该模型用学习率$\alpha$对每一帧图像升级。$$\hat{x}^t=(1-\alpha)\hat{x}^{t-1}+\alpha x^t$$ $$\hat{A}^t=(1-\alpha)\hat{A}^{t-1}+\alpha A^t$$</li>
@@ -493,6 +494,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/21/My-New-Post/" rel="prev" title="My New Post">
+                My New Post <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -572,7 +577,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -671,8 +676,8 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
