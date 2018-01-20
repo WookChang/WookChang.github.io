@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang  引言在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于ling-term tracki">
+<meta name="description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang 引言 在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于long-term tra">
 <meta name="keywords" content="笔记，跟踪，相关滤波">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《Long-Term Correlation Tracking》笔记">
 <meta property="og:url" content="http://wookchang.info/2017/06/10/long-term-correlation-tracking/index.html">
 <meta property="og:site_name" content="WookChang">
-<meta property="og:description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang  引言在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于ling-term tracki">
-<meta property="og:updated_time" content="2017-06-12T02:21:47.000Z">
+<meta property="og:description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang 引言 在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于long-term tra">
+<meta property="og:updated_time" content="2018-01-20T19:00:06.220Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《Long-Term Correlation Tracking》笔记">
-<meta name="twitter:description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang  引言在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于ling-term tracki">
+<meta name="twitter:description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang 引言 在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于long-term tra">
 
 
 
@@ -392,8 +392,9 @@
 
       
         <p>《Long-Term Correlation Tracking》<a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Ma_Long-Term_Correlation_Tracking_2015_CVPR_paper.pdf" target="_blank" rel="external">论文下载</a> <a href="https://github.com/chaoma99/lct-tracker" target="_blank" rel="external">代码下载</a></p>
-<p>Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang </p>
-<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于ling-term tracking。</p>
+<p>Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang</p>
+<h3 id="引言">引言</h3>
+<p>在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于long-term tracking。</p>
 <p>对于前期工作有两点观察：</p>
 <ul>
 <li>建模外观时间关系模型很重要，其中外观包括目标信息和上下文信息。</li>
@@ -410,28 +411,40 @@
 <li>scale estimation</li>
 <li>re-detection</li>
 </ul>
-<h3 id="相关工作"><a href="#相关工作" class="headerlink" title="相关工作"></a>相关工作</h3><p>相关跟踪：MOSSE-CSK-KCF-CN-DSST</p>
+<h3 id="相关工作">相关工作</h3>
+<p>相关跟踪：MOSSE-CSK-KCF-CN-DSST</p>
 <p>tracking-by-detection：TLD-<a href="https://pdfs.semanticscholar.org/40e0/b4107100f077bcea35bb5481e11898342b48.pdf" target="_blank" rel="external">MEEM</a>-Struck</p>
-<h3 id="跟踪器组成"><a href="#跟踪器组成" class="headerlink" title="跟踪器组成"></a>跟踪器组成</h3><h4 id="相关跟踪"><a href="#相关跟踪" class="headerlink" title="相关跟踪"></a>相关跟踪</h4><h5 id="典型方法"><a href="#典型方法" class="headerlink" title="典型方法"></a>典型方法</h5><p>用滤波器$\omega$对目标外观建模：</p>
-<p>$$\omega=\mathop{argmin}<em>{\omega}\sum</em>{m,n}$$</p>
-<p>$$ \omega=\mathop{argmin}<em>{\omega}\sum</em>{m,n}|\phi(x_{m,n})\cdot\omega-y(m,n)|^2+\lambda|\omega|^2 $$</p>
-<p>其中$\phi$表示核函数，$y$表示标签，$\lambda$表示正则化参数 </p>
-<p>$$ \omega=\sum<em>{m,n}\alpha(m,n)\phi(x</em>{m,n}) $$</p>
-<p>$$ A=\mathcal F(\alpha)=\frac{\mathcal F(y)}{\mathcal F(\phi(x)\cdot\phi(x))+\lambda} $$</p>
+<h3 id="跟踪器组成">跟踪器组成</h3>
+<h4 id="相关跟踪">相关跟踪</h4>
+<h5 id="典型方法">典型方法</h5>
+<p>用滤波器<span class="math inline">\(\omega\)</span>对目标外观建模：</p>
+<p><span class="math display">\[
+\omega=\mathop{argmin}\limits_{\omega}\sum_{m,n}
+\]</span></p>
+<p><span class="math display">\[ \omega=\mathop{argmin}_{\omega}\sum_{m,n}|\phi(x_{m,n})\cdot\omega-y(m,n)|^2+\lambda|\omega|^2 \]</span></p>
+<p>其中<span class="math inline">\(\phi\)</span>表示核函数，<span class="math inline">\(y\)</span>表示标签，<span class="math inline">\(\lambda\)</span>表示正则化参数</p>
+<p><span class="math display">\[ \omega=\sum_{m,n}\alpha(m,n)\phi(x_{m,n}) \]</span></p>
+<p><span class="math display">\[ A=\mathcal F(\alpha)=\frac{\mathcal F(y)}{\mathcal F(\phi(x)\cdot\phi(x))+\lambda} \]</span></p>
 <p>跟踪结果为：</p>
-<p>$$ \hat{y}=\mathcal F^{-1}(A\odot\mathcal{F}(\phi(z)\cdot\phi(\hat{x})) $$</p>
-<h5 id="本文不同"><a href="#本文不同" class="headerlink" title="本文不同"></a>本文不同</h5><p>对于每一帧基于相关滤波训练两个回归模型：</p>
+<p><span class="math display">\[ \hat{y}=\mathcal F^{-1}(A\odot\mathcal{F}(\phi(z)\cdot\phi(\hat{x})) \]</span></p>
+<h5 id="本文不同">本文不同</h5>
+<p>对于每一帧基于相关滤波训练两个回归模型：</p>
 <ul>
-<li>时间上下文模型$R_c$，包括目标和上下文信息，在遮挡情况下，可以根据背景判断目标。其中，需要去除边界效应，对于提取的特征需要用cosine window加权。该模型用学习率$\alpha$对每一帧图像升级。$$\hat{x}^t=(1-\alpha)\hat{x}^{t-1}+\alpha x^t$$ $$\hat{A}^t=(1-\alpha)\hat{A}^{t-1}+\alpha A^t$$</li>
-<li>通过已跟踪到的可信的目标，学习另一种判别回归模型$R<em>t$，使用$\hat y$的最大值决定跟踪结果的置信度。为了保持模型的稳定，本文使用预定义阈值$\mathcal{T}</em>\alpha$，只有当$max(\hat y)&gt;\mathcal{T}_\alpha$才升级$R_t$。注意，$R_t$模型中特征未使用余弦窗加权。</li>
-<li>在跟踪中，构建估计位置附近的目标金字塔用以尺度估计。P和Q指目标的大小，N为尺度数$S={a^n|[-\frac{N-1}{2}],[-\frac{N-3}{2}],\cdots,[\frac{N-1}{2}]}$，对于每个$s\in S$提取以$sP\times sQ$为大小的估计位置为中心的图像块$J_s$，uniformly resize all patches with size $P\times Q$，提取HOG特征，构建尺度特征金字塔。$\hat y_s$为$R_t$对$J_s$的响应，最优尺度$\hat S$为$$\hat S=\mathop{argmin}_s(max(\hat y_1),\cdots,max(\hat y_s))$$相应的如果$max(\hat y<em>s)&gt;\mathcal{T}</em>\alpha$，$R_t$才升级。</li>
+<li>时间上下文模型<span class="math inline">\(R_c\)</span>，包括目标和上下文信息，在遮挡情况下，可以根据背景判断目标。其中，需要去除边界效应，对于提取的特征需要用cosine window加权。该模型用学习率<span class="math inline">\(\alpha\)</span>对每一帧图像升级。<span class="math display">\[\hat{x}^t=(1-\alpha)\hat{x}^{t-1}+\alpha x^t\]</span> <span class="math display">\[\hat{A}^t=(1-\alpha)\hat{A}^{t-1}+\alpha A^t\]</span></li>
+<li>通过已跟踪到的可信的目标，学习另一种判别回归模型<span class="math inline">\(R_t\)</span>，使用<span class="math inline">\(\hat y\)</span>的最大值决定跟踪结果的置信度。为了保持模型的稳定，本文使用预定义阈值<span class="math inline">\(\mathcal{T}_\alpha\)</span>，只有当<span class="math inline">\(max(\hat y)&gt;\mathcal{T}_\alpha\)</span>才升级<span class="math inline">\(R_t\)</span>。注意，<span class="math inline">\(R_t\)</span>模型中特征未使用余弦窗加权。</li>
+<li>在跟踪中，构建估计位置附近的目标金字塔用以尺度估计。P和Q指目标的大小，N为尺度数<span class="math inline">\(S=\{a^n|[-\frac{N-1}{2}],[-\frac{N-3}{2}],\cdots,[\frac{N-1}{2}]\}\)</span>，对于每个<span class="math inline">\(s\in S\)</span>提取以<span class="math inline">\(sP\times sQ\)</span>为大小的估计位置为中心的图像块<span class="math inline">\(J_s\)</span>，uniformly resize all patches with size <span class="math inline">\(P\times Q\)</span>，提取HOG特征，构建尺度特征金字塔。<span class="math inline">\(\hat y_s\)</span>为<span class="math inline">\(R_t\)</span>对<span class="math inline">\(J_s\)</span>的响应，最优尺度<span class="math inline">\(\hat S\)</span>为<span class="math display">\[\hat S=\mathop{argmin}_s(max(\hat y_1),\cdots,max(\hat y_s))\]</span>相应的如果<span class="math inline">\(max(\hat y_s)&gt;\mathcal{T}_\alpha\)</span>，<span class="math inline">\(R_t\)</span>才升级。</li>
 </ul>
-<h4 id="在线检测"><a href="#在线检测" class="headerlink" title="在线检测"></a>在线检测</h4><p>设置阈值$\mathcal{T}_\gamma$，为了计算的效率，没有使用回归模型$R_t$，而是使用在线随机fern分类器（代码里用的是SVM分类器）。当满足阈值条件时，开始检测。</p>
-<h3 id="实施"><a href="#实施" class="headerlink" title="实施"></a>实施</h3><h4 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h4><p>训练$R_c$：HOG，31bins，灰度直方图，8bins，亮通道局部灰度直方图和非参局部rank transformation（这是啥），8bins。总共47通道的特征。</p>
-<p>训练$R_t$：HOG特征。</p>
+<h4 id="在线检测">在线检测</h4>
+<p>设置阈值<span class="math inline">\(\mathcal{T}_\gamma\)</span>，为了计算的效率，没有使用回归模型<span class="math inline">\(R_t\)</span>，而是使用在线随机fern分类器（代码里用的是SVM分类器）。当满足阈值条件时，开始检测。</p>
+<h3 id="实施">实施</h3>
+<h4 id="特征">特征</h4>
+<p>训练<span class="math inline">\(R_c\)</span>：HOG，31bins，灰度直方图，8bins，亮通道局部灰度直方图和非参局部rank transformation（这是啥），8bins。总共47通道的特征。</p>
+<p>训练<span class="math inline">\(R_t\)</span>：HOG特征。</p>
 <p>训练radom fern：跟踪结果resize成15*15的大小，形成灰度特征向量。</p>
-<h4 id="核函数"><a href="#核函数" class="headerlink" title="核函数"></a>核函数</h4><p>高斯核函数</p>
-<h4 id="随机ferns"><a href="#随机ferns" class="headerlink" title="随机ferns"></a>随机ferns</h4><p>使用KNN分类器，选择最置信的跟踪结果作正样本。</p>
+<h4 id="核函数">核函数</h4>
+<p>高斯核函数</p>
+<h4 id="随机ferns">随机ferns</h4>
+<p>使用KNN分类器，选择最置信的跟踪结果作正样本。</p>
 
       
     </div>
@@ -494,10 +507,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/21/My-New-Post/" rel="prev" title="My New Post">
-                My New Post <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -577,7 +586,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
