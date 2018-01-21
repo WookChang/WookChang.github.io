@@ -97,7 +97,7 @@
 <meta property="og:url" content="http://wookchang.info/2017/06/10/long-term-correlation-tracking/index.html">
 <meta property="og:site_name" content="WookChang">
 <meta property="og:description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang 引言 在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于long-term tra">
-<meta property="og:updated_time" content="2018-01-21T06:57:32.893Z">
+<meta property="og:updated_time" content="2018-01-21T07:01:43.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《Long-Term Correlation Tracking》笔记">
 <meta name="twitter:description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang 引言 在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于long-term tra">
@@ -186,7 +186,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">点滴记录</p>
+        <p class="site-subtitle">向何处，去悠悠</p>
       
   </div>
 
@@ -242,16 +242,6 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            公益404
           </a>
         </li>
       
@@ -418,10 +408,7 @@
 <h4 id="相关跟踪">相关跟踪</h4>
 <h5 id="典型方法">典型方法</h5>
 <p>用滤波器<span class="math inline">\(\omega\)</span>对目标外观建模：</p>
-<p><span class="math display">\[
-\omega=\mathop{argmin}\limits_{\omega}\sum_{m,n}
-\]</span></p>
-<p><span class="math display">\[ \omega=\mathop{argmin}_{\omega}\sum_{m,n}|\phi(x_{m,n})\cdot\omega-y(m,n)|^2+\lambda|\omega|^2 \]</span></p>
+<p><span class="math display">\[\omega=\mathop{argmin}_{\omega}\sum_{m,n}|\phi(x_{m,n})\cdot\omega-y(m,n)|^2+\lambda|\omega|^2 \]</span></p>
 <p>其中<span class="math inline">\(\phi\)</span>表示核函数，<span class="math inline">\(y\)</span>表示标签，<span class="math inline">\(\lambda\)</span>表示正则化参数</p>
 <p><span class="math display">\[ \omega=\sum_{m,n}\alpha(m,n)\phi(x_{m,n}) \]</span></p>
 <p><span class="math display">\[ A=\mathcal F(\alpha)=\frac{\mathcal F(y)}{\mathcal F(\phi(x)\cdot\phi(x))+\lambda} \]</span></p>
