@@ -97,7 +97,7 @@
 <meta property="og:url" content="http://wookchang.info/2017/06/10/long-term-correlation-tracking/index.html">
 <meta property="og:site_name" content="WookChang">
 <meta property="og:description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang 引言 在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于long-term tra">
-<meta property="og:updated_time" content="2018-01-21T06:55:22.577Z">
+<meta property="og:updated_time" content="2018-01-21T06:57:32.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《Long-Term Correlation Tracking》笔记">
 <meta name="twitter:description" content="《Long-Term Correlation Tracking》论文下载 代码下载 Chao Ma, Xiaokang Yang, Chongyang Zhang, Ming-Hsuan Yang 引言 在跟踪过程中，由于deformation, abrupt motion, heavy occlusion, out of view有着明显的外观改变，所以本文关注于long-term tra">
@@ -445,7 +445,8 @@
 <p>高斯核函数</p>
 <h4 id="随机ferns">随机ferns</h4>
 <p>使用KNN分类器，选择最置信的跟踪结果作正样本。</p>
-<p>###个人总结 题目中是长期跟踪，但是多长时间、多少帧数属于长期跟踪的范畴就不明确了。</p>
+<h3 id="个人总结">个人总结</h3>
+<p>题目中是长期跟踪，但是多长时间、多少帧数属于长期跟踪的范畴就不明确了。</p>
 <p>文章主要是在DSST的基础上加上了一个SVM检测器，如果目标变化过大也效果也会受到影响。检测器可不可以直接用相关滤波器进行检测？</p>
 <p>感觉代码中的参数信息过多了，各种置信度的设置都会影响到跟踪效果，能否改进为自适应阈值？</p>
 
@@ -666,7 +667,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关工作"><span class="nav-number">2.</span> <span class="nav-text">相关工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跟踪器组成"><span class="nav-number">3.</span> <span class="nav-text">跟踪器组成</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#相关跟踪"><span class="nav-number">3.1.</span> <span class="nav-text">相关跟踪</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#典型方法"><span class="nav-number">3.1.1.</span> <span class="nav-text">典型方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#本文不同"><span class="nav-number">3.1.2.</span> <span class="nav-text">本文不同</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在线检测"><span class="nav-number">3.2.</span> <span class="nav-text">在线检测</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实施"><span class="nav-number">4.</span> <span class="nav-text">实施</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特征"><span class="nav-number">4.1.</span> <span class="nav-text">特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#核函数"><span class="nav-number">4.2.</span> <span class="nav-text">核函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#随机ferns"><span class="nav-number">4.3.</span> <span class="nav-text">随机ferns</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关工作"><span class="nav-number">2.</span> <span class="nav-text">相关工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跟踪器组成"><span class="nav-number">3.</span> <span class="nav-text">跟踪器组成</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#相关跟踪"><span class="nav-number">3.1.</span> <span class="nav-text">相关跟踪</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#典型方法"><span class="nav-number">3.1.1.</span> <span class="nav-text">典型方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#本文不同"><span class="nav-number">3.1.2.</span> <span class="nav-text">本文不同</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在线检测"><span class="nav-number">3.2.</span> <span class="nav-text">在线检测</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实施"><span class="nav-number">4.</span> <span class="nav-text">实施</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特征"><span class="nav-number">4.1.</span> <span class="nav-text">特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#核函数"><span class="nav-number">4.2.</span> <span class="nav-text">核函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#随机ferns"><span class="nav-number">4.3.</span> <span class="nav-text">随机ferns</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人总结"><span class="nav-number">5.</span> <span class="nav-text">个人总结</span></a></li></ol></div>
             
 
           </div>
