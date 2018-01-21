@@ -90,20 +90,20 @@
 
 
 
-<meta name="description" content="《Understanding and Diagnosing Visual Tracking Systems》下载地址 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。 引言">
+<meta name="description" content="《Understanding and Diagnosing Visual Tracking Systems》 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 论文和matlab代码在项目主页 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继">
 <meta name="keywords" content="笔记，跟踪，评价">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《Understanding and Diagnosing Visual Tracking Systems》笔记">
 <meta property="og:url" content="http://wookchang.info/2017/06/08/Understanding and Diagnosing/index.html">
 <meta property="og:site_name" content="WookChang">
-<meta property="og:description" content="《Understanding and Diagnosing Visual Tracking Systems》下载地址 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。 引言">
-<meta property="og:image" content="http://images2015.cnblogs.com/blog/1127321/201706/1127321-20170608134405262-2012880001.png">
-<meta property="og:image" content="http://images2015.cnblogs.com/blog/1127321/201706/1127321-20170608134303918-998194423.png">
-<meta property="og:updated_time" content="2017-06-08T05:44:57.000Z">
+<meta property="og:description" content="《Understanding and Diagnosing Visual Tracking Systems》 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 论文和matlab代码在项目主页 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继">
+<meta property="og:image" content="https://raw.githubusercontent.com/WookChang/Pictures/master/2017-06-08/2017-06-08_1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/WookChang/Pictures/master/2017-06-08/2017-06-08_2.png">
+<meta property="og:updated_time" content="2018-01-21T06:48:48.655Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《Understanding and Diagnosing Visual Tracking Systems》笔记">
-<meta name="twitter:description" content="《Understanding and Diagnosing Visual Tracking Systems》下载地址 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。 引言">
-<meta name="twitter:image" content="http://images2015.cnblogs.com/blog/1127321/201706/1127321-20170608134405262-2012880001.png">
+<meta name="twitter:description" content="《Understanding and Diagnosing Visual Tracking Systems》 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 论文和matlab代码在项目主页 读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/WookChang/Pictures/master/2017-06-08/2017-06-08_1.png">
 
 
 
@@ -394,13 +394,12 @@
       
 
       
-        <p>《Understanding and Diagnosing Visual Tracking Systems》<a href="http://winsty.net/papers/diagnose.pdf" target="_blank" rel="external">下载地址</a></p>
-<p>ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia.</p>
+        <p>《Understanding and Diagnosing Visual Tracking Systems》 ICCV2015’ Naiyan Wang, Jianping Shi, Dit-Yan Yeung and Jiaya Jia. 论文和matlab代码在<a href="http://winsty.net/tracker_diagnose.html" target="_blank" rel="external">项目主页</a></p>
 <p>读过这篇文章对于跟踪器的框架由模糊变得清晰，明确了一种跟踪器的每个部分，并通过实验观察每个组成部分的重要性，指出今后可以继续研究的方向。</p>
 <h3 id="引言">引言</h3>
 <p>本文重点研究了最一般类型的视觉跟踪问题，即short-term single-object model-free tracking。目前的追踪器评估系统主要有Online tracking benchmark (OTB)，the Visual object tracking challenge (VOT)等。然而，由于跟踪器是往往由复杂的结构组成，不能简单的断定其强项与弱项。于是，作者提出了一种框架，将一个追踪系统分成了五个部分，分别为：motion model，feature extractor，observation model，model updater和ensemble post-processor。框架如下图</p>
 <figure>
-<img src="http://images2015.cnblogs.com/blog/1127321/201706/1127321-20170608134405262-2012880001.png" alt="1.png"><figcaption>1.png</figcaption>
+<img src="https://raw.githubusercontent.com/WookChang/Pictures/master/2017-06-08/2017-06-08_1.png" alt="1.png"><figcaption>1.png</figcaption>
 </figure>
 <p>本文发现feature extractor的效果最重要的影响因素，而非被人们研究的最多的observation model，而且，ensemble post-processor是有一个简单的却能有效提升性能的方法，相比之下很少被人研究。除此之外，motion model和model updater的细节也是影响性能的关键。</p>
 <h3 id="相关工作">相关工作</h3>
@@ -408,7 +407,7 @@
 <h3 id="提出的框架">提出的框架</h3>
 <ol type="1">
 <li>Motion Model：基于对过去帧的估计，运动模型在当前帧中产生一系列的可能会包含目标的候选区域</li>
-<li>Feature Extractor ：对每个候选区域提取特征，用这些特征来表征这些候选区域</li>
+<li>Feature Extractor ：对每个候选区域提取特征，用这些特征来表征这些候选区域</li>
 <li>Observation Model：对候选区域的的特征进行分析，来确定该区域是否为目标区域</li>
 <li>Model Updater：用来更新Observation Model，控制更新的策略以及何时更新</li>
 <li>Ensemble Poste-processor: 当一个跟踪系统中含有多个跟踪器时，要对多个跟踪器的跟踪结果进行一个组合分析，得到最终的跟踪结果</li>
@@ -427,7 +426,7 @@
 <h4 id="基础模型">基础模型</h4>
 <p>作者设计了一个基础的追踪系统。该系统采用particle filter框架作为motion model，将灰度图像的像素作为特征，将logistic regression作为observation model。对于model updater，作者采用一个简单的规则：候选区域框中的最高得分如果在阈值之下，那么该模型将会更新。该基础的追踪系统只有一个追踪器，因此不包含ensemble post-processor部分。该模型的效果如下（下图黑色曲线）：</p>
 <figure>
-<img src="http://images2015.cnblogs.com/blog/1127321/201706/1127321-20170608134303918-998194423.png" alt="2.png"><figcaption>2.png</figcaption>
+<img src="https://raw.githubusercontent.com/WookChang/Pictures/master/2017-06-08/2017-06-08_2.png" alt="2.png"><figcaption>2.png</figcaption>
 </figure>
 <h3 id="验证和分析">验证和分析</h3>
 <h4 id="feature-extractor">Feature Extractor</h4>
@@ -477,7 +476,7 @@
 </ol>
 <h3 id="总结和展望">总结和展望</h3>
 <ol type="1">
-<li>特征最重要</li>
+<li>_特征最重要</li>
 <li>如果特征足够好，观察模型就不再重要</li>
 <li>模型更新可以显著影响结果</li>
 <li>综合后处理很有效</li>
