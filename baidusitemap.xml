@@ -4,8 +4,90 @@
 
     
   <url>
+    <loc>http://wookchang.info/2018/02/09/nova-launcher/</loc>
+    <lastmod>2018-02-09T15:19:44.548Z</lastmod>
+    <data>
+        <display>
+        <title>nova launcher 相关使用说明</title>
+        <pubTime>2018-02-09T15:13:32.000Z</pubTime>
+        
+        <tag>项目</tag>
+         
+        <tag>安卓</tag>
+         
+         
+           
+             
+              <breadCrumb title="项目" url="http://wookchang.info/categories/%E9%A1%B9%E7%9B%AE/"/>
+          
+             
+              <breadCrumb title="安卓" url="http://wookchang.info/categories/%E9%A1%B9%E7%9B%AE/%E5%AE%89%E5%8D%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wookchang.info/2018/01/24/Future-Person-Localization-in-First-Person-Videos/</loc>
+    <lastmod>2018-01-24T08:42:40.007Z</lastmod>
+    <data>
+        <display>
+        <title>《Future Person Localization in First-Person Videos》笔记</title>
+        <pubTime>2018-01-24T07:09:05.000Z</pubTime>
+        
+        <tag>论文</tag>
+         
+        <tag>行人</tag>
+         
+        <tag>轨迹预测</tag>
+         
+         
+           
+             
+              <breadCrumb title="论文" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/"/>
+          
+             
+              <breadCrumb title="轨迹预测" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/%E8%BD%A8%E8%BF%B9%E9%A2%84%E6%B5%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wookchang.info/2017/06/08/Understanding-and-Diagnosing/</loc>
+    <lastmod>2018-01-24T08:04:41.392Z</lastmod>
+    <data>
+        <display>
+        <title>《Understanding and Diagnosing Visual Tracking Systems》笔记</title>
+        <pubTime>2017-06-07T16:00:00.000Z</pubTime>
+        
+        <tag>论文</tag>
+         
+        <tag>跟踪</tag>
+         
+        <tag>评价</tag>
+         
+         
+           
+             
+              <breadCrumb title="论文" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/"/>
+          
+             
+              <breadCrumb title="跟踪" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/%E8%B7%9F%E8%B8%AA/"/>
+          
+             
+              <breadCrumb title="评价" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/%E8%B7%9F%E8%B8%AA/%E8%AF%84%E4%BB%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wookchang.info/2018/01/23/hexo-github-pages-blog/</loc>
-    <lastmod>2018-01-23T16:23:51.217Z</lastmod>
+    <lastmod>2018-01-24T07:59:55.349Z</lastmod>
     <data>
         <display>
         <title>Hexo+Github博客搭建和优化</title>
@@ -29,8 +111,28 @@
 
     
   <url>
+    <loc>http://wookchang.info/2016/11/06/Just-the-Three-of-Us/</loc>
+    <lastmod>2018-01-23T16:30:50.713Z</lastmod>
+    <data>
+        <display>
+        <title>读《我们仨》</title>
+        <pubTime>2016-11-05T16:00:00.000Z</pubTime>
+        
+        <tag>读书，笔记</tag>
+         
+         
+           
+             
+              <breadCrumb title="读书，文学" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6%EF%BC%8C%E6%96%87%E5%AD%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wookchang.info/2018/01/21/Next-theme/</loc>
-    <lastmod>2018-01-23T13:20:53.422Z</lastmod>
+    <lastmod>2018-01-23T14:06:55.766Z</lastmod>
     <data>
         <display>
         <title>Hexo主题之Next相关使用介绍</title>
@@ -49,6 +151,31 @@
           
              
               <breadCrumb title="博客" url="http://wookchang.info/categories/%E9%A1%B9%E7%9B%AE/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wookchang.info/2016/09/11/Grocery-store/</loc>
+    <lastmod>2018-01-22T17:42:17.543Z</lastmod>
+    <data>
+        <display>
+        <title>读《解忧杂货店》</title>
+        <pubTime>2016-09-10T16:00:00.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+        <tag>笔记</tag>
+         
+         
+           
+             
+              <breadCrumb title="读书" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/"/>
+          
+             
+              <breadCrumb title="文学" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/%E6%96%87%E5%AD%A6/"/>
           
         </display>
     </data>
@@ -87,31 +214,6 @@
         <display>
         <title>读《灿烂千阳》</title>
         <pubTime>2016-10-13T16:00:00.000Z</pubTime>
-        
-        <tag>读书</tag>
-         
-        <tag>笔记</tag>
-         
-         
-           
-             
-              <breadCrumb title="读书" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/"/>
-          
-             
-              <breadCrumb title="文学" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/%E6%96%87%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wookchang.info/2016/09/11/Grocery-store/</loc>
-    <lastmod>2018-01-22T17:42:17.543Z</lastmod>
-    <data>
-        <display>
-        <title>读《解忧杂货店》</title>
-        <pubTime>2016-09-10T16:00:00.000Z</pubTime>
         
         <tag>读书</tag>
          
@@ -179,29 +281,29 @@
 
     
   <url>
-    <loc>http://wookchang.info/2017/06/08/Understanding-and-Diagnosing/</loc>
-    <lastmod>2018-01-22T17:40:29.797Z</lastmod>
+    <loc>http://wookchang.info/2017/05/09/The-most-popular-decision-class/</loc>
+    <lastmod>2018-01-22T17:40:29.796Z</lastmod>
     <data>
         <display>
-        <title>《Understanding and Diagnosing Visual Tracking Systems》笔记</title>
-        <pubTime>2017-06-07T16:00:00.000Z</pubTime>
+        <title>读《京东大学最受欢迎的决策课》</title>
+        <pubTime>2017-05-08T16:00:00.000Z</pubTime>
         
-        <tag>论文</tag>
+        <tag>读书</tag>
          
-        <tag>跟踪</tag>
+        <tag>笔记</tag>
          
-        <tag>评价</tag>
+        <tag>管理</tag>
          
          
            
              
-              <breadCrumb title="论文" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/"/>
+              <breadCrumb title="读书" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/"/>
           
              
-              <breadCrumb title="跟踪" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/%E8%B7%9F%E8%B8%AA/"/>
+              <breadCrumb title="实用" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/%E5%AE%9E%E7%94%A8/"/>
           
              
-              <breadCrumb title="评价" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/%E8%B7%9F%E8%B8%AA/%E8%AF%84%E4%BB%B7/"/>
+              <breadCrumb title="管理" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/%E5%AE%9E%E7%94%A8/%E7%AE%A1%E7%90%86/"/>
           
         </display>
     </data>
@@ -239,49 +341,31 @@
 
     
   <url>
-    <loc>http://wookchang.info/2016/11/05/1984/</loc>
+    <loc>http://wookchang.info/2017/06/10/long-term-correlation-tracking/</loc>
     <lastmod>2018-01-22T17:40:29.796Z</lastmod>
     <data>
         <display>
-        <title>读《1984》</title>
-        <pubTime>2016-11-04T16:00:00.000Z</pubTime>
+        <title>《Long-Term Correlation Tracking》笔记</title>
+        <pubTime>2017-06-09T16:00:00.000Z</pubTime>
         
-        <tag>读书</tag>
+        <tag>论文</tag>
          
-        <tag>笔记</tag>
+        <tag>跟踪</tag>
+         
+        <tag>相关滤波</tag>
+         
+        <tag>长期跟踪</tag>
          
          
            
              
-              <breadCrumb title="读书" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/"/>
+              <breadCrumb title="论文" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/"/>
           
              
-              <breadCrumb title="文学" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/%E6%96%87%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wookchang.info/2016/11/06/Just-the-Three-of-Us/</loc>
-    <lastmod>2018-01-22T17:40:29.796Z</lastmod>
-    <data>
-        <display>
-        <title>读《我们仨》</title>
-        <pubTime>2016-11-05T16:00:00.000Z</pubTime>
-        
-        <tag>读书</tag>
-         
-        <tag>笔记</tag>
-         
-         
-           
-             
-              <breadCrumb title="读书" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/"/>
+              <breadCrumb title="跟踪" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/%E8%B7%9F%E8%B8%AA/"/>
           
              
-              <breadCrumb title="文学" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/%E6%96%87%E5%AD%A6/"/>
+              <breadCrumb title="相关滤波" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/%E8%B7%9F%E8%B8%AA/%E7%9B%B8%E5%85%B3%E6%BB%A4%E6%B3%A2/"/>
           
         </display>
     </data>
@@ -314,18 +398,16 @@
 
     
   <url>
-    <loc>http://wookchang.info/2017/05/09/The-most-popular-decision-class/</loc>
+    <loc>http://wookchang.info/2016/11/05/1984/</loc>
     <lastmod>2018-01-22T17:40:29.796Z</lastmod>
     <data>
         <display>
-        <title>读《京东大学最受欢迎的决策课》</title>
-        <pubTime>2017-05-08T16:00:00.000Z</pubTime>
+        <title>读《1984》</title>
+        <pubTime>2016-11-04T16:00:00.000Z</pubTime>
         
         <tag>读书</tag>
          
         <tag>笔记</tag>
-         
-        <tag>管理</tag>
          
          
            
@@ -333,42 +415,7 @@
               <breadCrumb title="读书" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/"/>
           
              
-              <breadCrumb title="实用" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/%E5%AE%9E%E7%94%A8/"/>
-          
-             
-              <breadCrumb title="管理" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/%E5%AE%9E%E7%94%A8/%E7%AE%A1%E7%90%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wookchang.info/2017/06/10/long-term-correlation-tracking/</loc>
-    <lastmod>2018-01-22T17:40:29.796Z</lastmod>
-    <data>
-        <display>
-        <title>《Long-Term Correlation Tracking》笔记</title>
-        <pubTime>2017-06-09T16:00:00.000Z</pubTime>
-        
-        <tag>论文</tag>
-         
-        <tag>跟踪</tag>
-         
-        <tag>相关滤波</tag>
-         
-        <tag>长期跟踪</tag>
-         
-         
-           
-             
-              <breadCrumb title="论文" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/"/>
-          
-             
-              <breadCrumb title="跟踪" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/%E8%B7%9F%E8%B8%AA/"/>
-          
-             
-              <breadCrumb title="相关滤波" url="http://wookchang.info/categories/%E8%AE%BA%E6%96%87/%E8%B7%9F%E8%B8%AA/%E7%9B%B8%E5%85%B3%E6%BB%A4%E6%B3%A2/"/>
+              <breadCrumb title="文学" url="http://wookchang.info/categories/%E8%AF%BB%E4%B9%A6/%E6%96%87%E5%AD%A6/"/>
           
         </display>
     </data>
